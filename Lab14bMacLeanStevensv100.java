@@ -1,4 +1,4 @@
-// Lab14bvst.java
+// Lab14bMacLeanStevensv100.java
 // This is one of the student starting files
 // of the Lab14b lab assignment.
 // This file tests all the classes together.
@@ -10,7 +10,7 @@ import java.applet.*;
 import java.util.ArrayList;
 
 
-public class Lab14bvst extends Applet
+public class Lab14bMacLeanStevensv100 extends Applet
 {
 	public void paint(Graphics g)
 	{
