@@ -5,10 +5,11 @@ public class Train
   public Train()
   {
   }
-  public void addCar(String type, int x, int y)
+  public void addCar(String type, Color color)
   {
+    
   }
-  public void addCar(int loc, String type, int x, int y)
+  public void addCar(int loc, String type, Color color)
   {
   }
 }
