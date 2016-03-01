@@ -1,12 +1,7 @@
-// PassengerCar.java
-// This is one of the student starting files
-// of the Lab14b lab assignment.
-
-
 import java.awt.*;
 
 
-class PassengerCar extends RailCar
+class PassengerCar extends RailCar //This creates the passenger car of the train
 {
 	private Color carColor;
 	private int xPos;
@@ -20,14 +15,14 @@ class PassengerCar extends RailCar
       this.yPos = yPos;
    }
 
-	public void drawCar(Graphics g)
+	public void drawCar(Graphics g) //this draws the passenger car
 	{
 		super.drawCar(g);
 		drawWindows(g);
       drawRoof(g);
 	}
 
-	private void drawWindows(Graphics g)
+	private void drawWindows(Graphics g) //this draws the windows of the passenger car
 	{
 	    g.setColor(Color.white);
 	    g.fillRect(xPos+10,yPos+30,25,30);
