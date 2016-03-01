@@ -1,16 +1,16 @@
 import java.util.*;
 import java.awt.*;
 
-public class Train
+public class Train //This is the train class
 {
-   protected ArrayList<RailCar> cars;
-   protected ArrayList<Color> colors;
-   protected ArrayList<String> types;
+   protected ArrayList<RailCar> cars; //This is the ArrayList for the cars
+   protected ArrayList<Color> colors; //This is the ArrayList for the colors of the train
+   protected ArrayList<String> types; //This is the Arraylist for strings of the types
    protected int x;
    protected int y;
    protected int startX;
      
-   public Train(int x, int y)
+   public Train(int x, int y) 
    {
       cars   = new ArrayList<RailCar>();
       colors = new ArrayList<Color>();
@@ -20,7 +20,7 @@ public class Train
       startX = x;
    }
      
-   public void addCar(String type, Color color)
+   public void addCar(String type, Color color) //this adds the train cars to the train
    {
       switch (type)
       {
@@ -35,7 +35,7 @@ public class Train
       x += 175;
    }
      
-   public void addCar(int loc, String type, Color color)
+   public void addCar(int loc, String type, Color color) //This adds the train cars to a certain location in the arraylist
    {
       ArrayList<RailCar> temp = new ArrayList<RailCar>();
       int tempX = startX;
@@ -75,7 +75,7 @@ public class Train
       x = tempX;
    }
      
-   public void showCars(Graphics g)
+   public void showCars(Graphics g) //This shows the train
    {
       for (RailCar car : cars)
          car.drawCar(g);
