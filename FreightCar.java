@@ -1,12 +1,7 @@
-// FreightCar.java
-// This is one of the student starting files
-// of the Lab14b lab assignment.
-
-
 import java.awt.*;
 
 
-public class FreightCar extends RailCar
+public class FreightCar extends RailCar //This is the Freight Car class, creating the graphical freight car of the train
 {
 	private Color carColor;
 	private int xPos;
@@ -20,13 +15,13 @@ public class FreightCar extends RailCar
       this.yPos = yPos;
    }
 
-	public void drawCar(Graphics g)
+	public void drawCar(Graphics g) //This draws the freight car
 	{
 		super.drawCar(g);
 		drawFreightDoors(g);
 	}
    
-	private void drawFreightDoors(Graphics g)
+	private void drawFreightDoors(Graphics g) //This draws the freight doors on the train car
 	{
 		g.setColor(Color.black);
 		g.drawRect(xPos+30,yPos+10,90,60);
