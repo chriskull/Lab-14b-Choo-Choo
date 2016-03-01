@@ -1,12 +1,7 @@
-// Locomotive.java
-// This is one of the student starting files
-// of the Lab14b lab assignment.
-
-
 import java.awt.*;
 
 
-public class Locomotive extends RailCar
+public class Locomotive extends RailCar //this is the Locomotive class, creating the front of the train
 {
 	private Color carColor;
 	private int xPos;
@@ -20,14 +15,14 @@ public class Locomotive extends RailCar
       this.yPos = yPos;
    }
 
-	public void drawCar(Graphics g)
+	public void drawCar(Graphics g) //This draws the locomotive car of the train
 	{
 		super.drawCar(g);
 		drawScoop(g);
 		drawFunnel(g);
 	}
 
-	private void drawScoop(Graphics g)
+	private void drawScoop(Graphics g) //This draws the scoop of the locomotive car
 	{
 		Polygon scoop = new Polygon();
 		scoop.addPoint(xPos,yPos+50);
@@ -37,7 +32,7 @@ public class Locomotive extends RailCar
 	   g.fillPolygon(scoop);
 	}
 
-	private void drawFunnel(Graphics g)
+	private void drawFunnel(Graphics g) //this draws the funnel of the locomotive car
 	{
 		Polygon funnel = new Polygon();
 		funnel.addPoint(xPos+20,yPos);
