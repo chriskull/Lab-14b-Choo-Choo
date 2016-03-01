@@ -1,30 +1,28 @@
-// Lab14bMacLeanStevensv100.java
-// This is one of the student starting files
-// of the Lab14b lab assignment.
-// This file tests all the classes together.
-// and draws a train without proper OOP design.
+// Lab14bv100.java
+// 02-24-15 by Leon Schram
+// This is the provided testing file for the Lab14bv100 assignment.
+
 
 
 import java.awt.*;
 import java.applet.*;
-import java.util.ArrayList;
 
 
 public class Lab14bMacLeanStevensv100 extends Applet
 {
 	public void paint(Graphics g)
 	{
-      ArrayList<RailCar> railCars = new ArrayList<RailCar>();
-      railCars.add(new Locomotive(Color.blue,100,300));
-      railCars.add(new PassengerCar(Color.gray,275,300));
-      railCars.add(new PassengerCar(Color.gray,450,300));
-      railCars.add(new PassengerCar(Color.gray,625,300));
-      railCars.add(new FreightCar(Color.green,800,300));
-      railCars.add(new FreightCar(Color.green,975,300));      
-      railCars.add(new Caboose(Color.red,1150,300));
-      
-      for (RailCar railCar : railCars)
-         railCar.drawCar(g);
+      //this.setSize(2000,800);
+      Train train = new Train(100,300);
+      train.addCar("Locomotive",Color.blue);
+      train.addCar("PassengerCar",Color.gray);
+      train.addCar("PassengerCar",Color.gray);
+      train.addCar("FreightCar",Color.green);
+      train.addCar(3,"PassengerCar",Color.gray);
+      train.addCar("FreightCar",Color.green);
+      train.addCar("Caboose",Color.red);
+      train.addCar(6,"FreightCar",Color.green);
+      train.showCars(g);
 	}
 }
-	
+
